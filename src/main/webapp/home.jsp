@@ -18,7 +18,11 @@
    		</li>
    </ul>
    </div>
+   <div id="map" style="width:1500px; height:1200px;">
+   </div>
 </div>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=3d6022b2beb61e1212f718707de6c0f3"></script>
+<script type="text/javascript" src="main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
