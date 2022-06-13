@@ -9,8 +9,11 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+<jsp:include page="../common/nav.jsp">
+	<jsp:param name="menu" value="overpass"/>
+</jsp:include>
 <div class="container">
-	<h3>서울 보행육교 정보 리스트</h3>
+	<h5>서울 보행육교 정보 리스트</h5>
    <table>
 	   <thead id="th">
 	   		<tr class="th-row">

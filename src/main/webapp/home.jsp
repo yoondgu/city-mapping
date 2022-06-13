@@ -5,27 +5,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>seoul map</title>
+<title>seoul maps</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+<jsp:include page="common/nav.jsp">
+	<jsp:param name="menu" value="home"/>
+</jsp:include>
 <div class="container">
-	<div class="row p-5 text-center" id="title">
-	   <h5><a href="home.jsp">서울의 입체시설물 정보</a></h5>
-	</div>
-
-	<div class="row p-3" id="navbar">
-		<div class="col-4 text-center">
-		   		<a href="">보행육교 리스트</a>
-		</div>
-		<div class="col-4 text-center">
-		   		<a href="">메뉴2</a>
-		</div>
-		<div class="col-4 text-center">
-		   		<a href="">메뉴3</a>
-		</div>
-	</div>
-	
 	<div id="mapwrap">
 	   <div id="map" style="width:1000px; height:1000px; margin:0 auto!important;"></div>
 	</div>
@@ -106,7 +93,7 @@
 	function createInfowindow(position) {
 	    // 마커를 클릭했을 때 마커 위에 표시할 인포윈도우를 생성합니다
 	    console.log(position.title);
-		let iwContent = '<div style="padding:5px;">' + position.title + '</div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+		let iwContent = '<div class="badge text-dark text-wrap">' + position.title + '</div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
 		    iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
 		
 		// 인포윈도우를 생성합니다
